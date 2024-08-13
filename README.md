@@ -29,9 +29,9 @@ Design and implement a Catalog Management System using Spring Boot that allows u
 - **Configuration**: Setup for database and application properties.
   - `application.properties`: Configures database and other settings.
 
-- **Tests**: Unit and integration tests.
+- **Tests**: 
   - `ProductServiceTests`: Tests for service layer logic.
-  - `ProductControllerTests`: Tests for API endpoints.
+ 
 # Springboot version- 3.3.2
 # Dependencies used- spring web,Data JPA,MYSQL connector,Actuator,validation.
 
