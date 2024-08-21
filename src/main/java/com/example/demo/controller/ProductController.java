@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.Product;
+import com.example.demo.model.ProductSearch;
 import com.example.demo.service.ProductService;
 
 @RestController
@@ -64,4 +65,10 @@ public class ProductController {
         productService.deleteProduct(id);
         return ResponseEntity.noContent().build();
     }
+    @PostMapping("/search")
+    public ResponseEntity<List<Product>> searchProducts(@Validated @RequestBody ProductSearch obj) {
+        List<Product> products = productService.searchProductsName(obj.getName());
+        return ResponseEntity.ok(products);
+    }
+
 }

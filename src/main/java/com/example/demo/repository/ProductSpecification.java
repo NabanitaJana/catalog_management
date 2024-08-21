@@ -9,6 +9,8 @@ import com.example.demo.model.Product;
 public class ProductSpecification {
     public static Specification<Product> hasName(String name) {
         return (product, cq, cb) -> cb.like(cb.lower(product.get("name")), "%" + name.toLowerCase() + "%");
+        
+
     }
 
     public static Specification<Product> hasBrand(String brand) {

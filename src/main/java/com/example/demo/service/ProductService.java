@@ -66,4 +66,9 @@ public class ProductService {
     public void deleteProduct(Long id) {
         productRepository.deleteById(id);
     }
+    public List<Product> searchProductsName(String name) {
+        Specification<Product> spec = ProductSpecification.hasName(name);
+        return productRepository.findAll(spec);
+    }
+    
 }

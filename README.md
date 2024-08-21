@@ -6,24 +6,24 @@ Design and implement a Catalog Management System using Spring Boot that allows u
 
 ## Features
 
-- **Product Management**: Store and manage product data including brand name, description, price, quantity, category, and more.
-- **CRUD Operations**: Perform Create, Read, Update, and Delete operations on products via RESTful API endpoints.
+- **Product Management**: Stored and managed product data including brand name, description, price, quantity, category, and more.
+- **CRUD Operations**: Performed Create, Read, Update, and Delete operations on products via RESTful API endpoints.
 - **Search and Filtering**: Search and filter products based on criteria such as name, brand, category, price range, and quantity range.
-- **Data Validation**: Ensure input data integrity using validation annotations and handle validation errors gracefully.
-- **Data Persistence**: Utilize a relational database (H2 for testing, MySQL for production) for data storage and retrieval.
-- **Logging and Auditing**: Implement logging and auditing to track changes made to product data.
+- **Data Validation**: Ensured input data integrity using validation annotations and handle validation errors gracefully.
+- **Data Persistence**: Utilized a relational database (MySQL) for data storage and retrieval.
+- **Logging and Auditing**: Implemented logging and auditing to track changes made to product data.
 ## Project Structure
 
-- **Controllers**: Manage HTTP requests and responses.
-  - `ProductController`: Handles CRUD operations and queries.
+- **Controller**: Managed HTTP requests and responses.
+  - `ProductController`: Handles CRUD operations.
 
-- **Models**: Represent the data structure.
+- **Model**: Represent the data structure.
   - `Product`: Entity representing a product with attributes like id, name, brand, description, price, quantity, category, and date added.
 
-- **Repositories**: Interface with the database.
+- **Repositorie**: Interface with the database.
   - `ProductRepository`: Provides CRUD operations and custom queries.
 
-- **Services**: Contain business logic.
+- **Service**: Contain business logic.
   - `ProductService`: Handles the business logic for managing products.
 
 - **Configuration**: Setup for database and application properties.
