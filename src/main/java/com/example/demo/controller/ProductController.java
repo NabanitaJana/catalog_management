@@ -65,7 +65,7 @@ public class ProductController {
         productService.deleteProduct(id);
         return ResponseEntity.noContent().build();
     }
-    @PostMapping("/search")
+    @PostMapping("/search")   // Added search function
     public ResponseEntity<List<Product>> searchProducts(@Validated @RequestBody ProductSearch obj) {
         List<Product> products = productService.searchProductsName(obj.getName());
         return ResponseEntity.ok(products);
