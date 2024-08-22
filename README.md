@@ -40,3 +40,4 @@ Design and implement a Catalog Management System using Spring Boot that allows u
 ## Create Product : http://localhost:8080/api/products
 ## Update Product : http://localhost:8080/api/products/1
 ##  Delete Product : http://localhost:8080/api/products/1
+## search product : http://localhost:8080/api/products/search
